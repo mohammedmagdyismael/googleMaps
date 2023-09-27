@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{ useState } from 'react'
+import GoogleMaps from './GoogleMaps';
 
-function App() {
+const App = () => {
+
+  const [points, setPoints] = useState([]);
+  
+  
+  const renderCoordinates = () => {
+    let pointsCoordinates = ''
+    if (points.length) {
+      points.forEach(pnt => {
+        pointsCoordinates = `${pointsCoordinates}Lat: ${pnt.lat}\n Lng: ${pnt.lng}\n\n`
+      })
+    }
+    return pointsCoordinates || '-';
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div className='map-container'>
+        <GoogleMaps points={points} onChange={setPoints} />
+      </div>
+      <div className='coordinates-container'>
+        <p>Polygon Co-ordinates:</p>
+        <p>{renderCoordinates()}</p>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

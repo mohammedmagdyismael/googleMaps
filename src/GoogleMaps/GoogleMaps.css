@@ -1,0 +1,55 @@
+.btns-container {
+    bottom: 0;
+    position: absolute !important;
+    margin: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.reset-roi {
+    background: none padding-box rgb(255, 255, 255);
+    display: table-cell;
+    border: 0px;
+    padding: 0px 17px;
+    text-transform: none;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    direction: ltr;
+    overflow: hidden;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+    color: rgb(86, 86, 86);
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    min-width: 64px;
+}
+
+.re-center {
+    background: none padding-box rgb(255, 255, 255);
+    display: table-cell;
+    border: 0px;
+    padding: 0px 17px;
+    text-transform: none;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    direction: ltr;
+    overflow: hidden;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+    color: rgb(86, 86, 86);
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    min-width: 64px;
+}
