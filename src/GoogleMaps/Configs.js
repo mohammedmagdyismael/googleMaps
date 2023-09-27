@@ -1,4 +1,3 @@
-export const ADD_KEY_HERE = "AIzaSyAytC_TusuhG7kpNQ19hMrCzXDIUjd307o";
 
 export const defaultMapOptions = {
     fullscreenControl: false,
