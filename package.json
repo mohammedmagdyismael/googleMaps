@@ -1,5 +1,6 @@
 {
   "name": "google-maps-component",
+  "homepage": "https://mohammedmagdyismael.github.io/googleMaps",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
